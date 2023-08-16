@@ -168,7 +168,7 @@ class Items{
 	}
 
 	drawStopWatch(){
-		let stopwatch = this.stopwatch.final.toString()
+		let stopwatch = this.stopwatch.final < 99 ? this.stopwatch.final.toString():'99'
 		let pos = {x: canvas.width, y:canvas.height}
 
 		ctx.font = "35px Pixel"
